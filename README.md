@@ -1,6 +1,6 @@
 # Pipeline RAG Bilingue : Ingestion de Documentation API & Recherche Sémantique
 
-Ce projet implémente un **RAG (Retrieval-Augmented Generation)** pour la docuementation de l'**API YouTube Data V3**. Il s'agit de la première étape (V1) vers un outil de support technique plus performant et destiné à être déployé à grande échelle.
+Ce projet implémente un **RAG (Retrieval-Augmented Generation)** pour la docuementation de l'**API YouTube Data V3**. Il s'agit de la première étape (V0) vers un outil de support technique plus performant et destiné à être déployé à grande échelle.
 
 Pour l'instant, ce projet fonctionne via un notebook et s'exécute entièrement en local.
 
