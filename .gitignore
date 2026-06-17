@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# Variables d'environnement (clés API YouTube, credentials MongoDB...)
+.env
+.env.*
+*.env
+config.yml
+config.yaml
+secrets.json
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb  # si tu ne veux pas versionner les notebooks
+
+# Données (commentaires YouTube, datasets Kaggle...)
+data/
+*.csv
+*.json
+*.parquet
+
+# Doc
+*.docx
+Docs/
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+
+# MongoDB
+dump/
+*.bson
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# fichiers/ dossiers
+tests.ipynb
+data/
+rag_database/
