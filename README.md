@@ -3,6 +3,10 @@
 Ce projet implémente un **RAG (Retrieval-Augmented Generation)** pour la docuementation de l'**API YouTube Data V3**. Il s'agit de la première étape (V0) vers un outil de support technique plus performant et destiné à être déployé à grande échelle.
 
 Pour l'instant, ce projet fonctionne via un notebook et s'exécute entièrement en local.
+Maintenant ce projet fonctionne via :
+- un notebook (version initial)
+- un script main.py : requêtes via le terminal
+- une API REST : requête POST dans FastAPI
 
 ## 🏗️ Architecture du Projet
 
@@ -63,3 +67,5 @@ GEMINI_API_KEY="YourGeminiKey..."
 * Amélioration du nettoyage des docuements
 * Utiliser des méthodes de chunking plus adaptés
 * Explorer les méthodes de de calcul de distance
+* Ajouter une API
+* Ajouter de la persistence de mémoire
