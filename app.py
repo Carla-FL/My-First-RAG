@@ -28,6 +28,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
+import uvicorn
 import os
 import dotenv
 from supabase import create_client
@@ -53,7 +54,7 @@ async def lifespan(app: FastAPI):
         if not response or len(response.data) != 77:
             raise Exception("Erreur lors de la récupération des données depuis Supabase ou e nombre de documents récupérés est incorrect.")
     except Exception as e:
-        raise(f"Erreur de récupération des données : {e}")
+        raise Exception(f"Erreur de récupération des données : {e}")
     
     try :
         collection = chroma_config()
@@ -99,4 +100,4 @@ def get_query(payload: QueryRequest):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    uvicorn.run("app:app",host='0.0.0.0', port=8000, reload=True)
