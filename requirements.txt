@@ -4,3 +4,4 @@ pydantic
 supabase
 chromadb
 google-genai
+trafilatura
